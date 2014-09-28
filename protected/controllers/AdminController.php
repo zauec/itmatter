@@ -89,39 +89,59 @@ class AdminController extends Controller
 		$this->redirect('/admin');
 	}
 
-	public function actionAdd(){
-		if(Yii::app()->request->getPost('add')){
+	public function actionAdd()
+    {
+        if (Yii::app()->request->getPost('add')) {
 
-			define ('PATH', realpath(dirname(__FILE__)."../../../"));
-			
-			$post = new Works;
-			
-			$post->header = Yii::app()->request->getPost('header');
-			$post->link = Yii::app()->request->getPost('link');
-			$post->description = Yii::app()->request->getPost('description');
-			$post->tags = Yii::app()->request->getPost('tags');
-			
-			if(!empty($_FILES['preview']['tmp_name'])){
-				$imageinfo = getimagesize($_FILES['preview']['tmp_name']);
-				if($imageinfo['mime'] != 'image/gif' || $imageinfo['mime'] != 'image/jpeg' || $imageinfo['mime'] != 'image/png') {
-					$post->preview = time().$this->translit(basename($_FILES['preview']['name']));
-					move_uploaded_file($_FILES['preview']['tmp_name'], PATH.'static/img/works/'.$post->preview);
-				}
-			}
-			
-			$post->category_id = Yii::app()->request->getPost('category');
+            define ('PATH', realpath(dirname(__FILE__) . "../../../"));
 
-            if($post->save())
+            $post = new Works;
+
+            $post->header = Yii::app()->request->getPost('header');
+            $post->link = Yii::app()->request->getPost('link');
+            $post->description = Yii::app()->request->getPost('description');
+            $post->tags = Yii::app()->request->getPost('tags');
+            $post->category_id = Yii::app()->request->getPost('category');
+
+            if (!empty($_FILES['preview']['tmp_name'])) {
+                $imageinfo = getimagesize($_FILES['preview']['tmp_name']);
+                if ($imageinfo['mime'] != 'image/gif' || $imageinfo['mime'] != 'image/jpeg' || $imageinfo['mime'] != 'image/png') {
+                    $post->preview = time() . $this->translit(basename($_FILES['preview']['name']));
+                    move_uploaded_file($_FILES['preview']['tmp_name'], PATH . 'static/img/works/' . $post->preview);
+                }
+            }
+
+            if ($post->save()) {
+                foreach ($_FILES["files"]["error"] as $key => $error) {
+                    if ($error == UPLOAD_ERR_OK) {
+                        $imageinfo = getimagesize($_FILES['files']['tmp_name'][$key]);
+                        if ($imageinfo['mime'] != 'image/gif' || $imageinfo['mime'] != 'image/jpeg' || $imageinfo['mime'] != 'image/png') {
+                            $tmp_name = $_FILES["files"]["tmp_name"][$key];
+                            $name = time() . $_FILES["files"]["name"][$key];
+
+                            $image = new Images;
+                            $image->work_id = $post->id;
+                            $image->image = $name;
+
+                            if (move_uploaded_file($tmp_name, PATH . 'static/img/works/' . $name)) {
+                                $image->save();
+                            }
+                        }
+                    }
+                }
+
                 $this->redirect('/admin');
-            else
+            }
+            else {
                 echo "При сохранении произошла ошибка";
-		}
-		else{
+            }
+        }
+        else{
             $categories = Categories::model()->findAll();
+            $this->render('add',['categories'=>$categories]);
+        }
 
-			$this->render('add',['categories'=>$categories]);
-		}
-	}
+    }
 	public function actionIndex(){
 		$works = Works::model()->findAll();
 

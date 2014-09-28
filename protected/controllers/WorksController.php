@@ -7,15 +7,16 @@ class WorksController extends Controller
 	public function actionIndex($id = 0)
     {
         if ($id) {
-            $work = Works::model()->findByPk($id);
-            $images = Images::model()->findAll();
-            $this->render('work',['work'=>$work]);
+
+            $work = Works::model()->with('images')->findByPk($id);
+
+            $buttons['next'] = Works::model()->getNextId($id);
+            $buttons['previous'] = Works::model()->getPreviousId($id);
+
+            $this->render('work',['work'=>$work,'buttons'=>$buttons]);
+
         } else {
-
             $works = Works::model()->findAll();
-
-            //$categories = CHtml::listData(Categories::model()->findAll(), 'work_id', 'name');
-
             $this->render('index', ['works' => $works]);
         }
     }

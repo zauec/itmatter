@@ -46,7 +46,7 @@ return array(
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
-			'errorAction'=>'post/error',
+			'errorAction'=>'works/error',
 		),
 		'urlManager'=>array(
 			'urlFormat'=>'path',

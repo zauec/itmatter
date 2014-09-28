@@ -27,6 +27,11 @@ class Images extends CActiveRecord
 	public function primaryKey()
 	{
 		return 'id';
-
 	}
+    public function relations()
+    {
+        return array(
+            'images'=>array(self::BELONGS_TO, 'Works', 'id'),
+        );
+    }
 }

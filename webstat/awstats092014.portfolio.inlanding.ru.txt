@@ -9,32 +9,32 @@ AWSTATS DATA FILE 7.1 (build 1.983)
 BEGIN_MAP 27
 POS_GENERAL 2002                
 POS_TIME 2668                
-POS_VISITOR 8005                
-POS_DAY 8230                
-POS_DOMAIN 3256                
-POS_LOGIN 3487                
-POS_ROBOT 3642                
-POS_WORMS 3877                
-POS_EMAILSENDER 4008                
-POS_EMAILRECEIVER 4151                
-POS_SESSION 8363                
-POS_SIDER 8536                
-POS_FILETYPES 4286                
-POS_DOWNLOADS 4499                
-POS_OS 4547                
-POS_BROWSER 4650                
-POS_SCREENSIZE 4755                
-POS_UNKNOWNREFERER 4829                
-POS_UNKNOWNREFERERBROWSER 4916                
-POS_ORIGIN 4998                
-POS_SEREFERRALS 5136                
-POS_PAGEREFS 5280                
-POS_SEARCHWORDS 5428                
-POS_KEYWORDS 5580                
+POS_VISITOR 7934                
+POS_DAY 8147                
+POS_DOMAIN 3255                
+POS_LOGIN 3486                
+POS_ROBOT 3641                
+POS_WORMS 3806                
+POS_EMAILSENDER 3937                
+POS_EMAILRECEIVER 4080                
+POS_SESSION 8280                
+POS_SIDER 8453                
+POS_FILETYPES 4215                
+POS_DOWNLOADS 4428                
+POS_OS 4476                
+POS_BROWSER 4579                
+POS_SCREENSIZE 4684                
+POS_UNKNOWNREFERER 4758                
+POS_UNKNOWNREFERERBROWSER 4845                
+POS_ORIGIN 4927                
+POS_SEREFERRALS 5065                
+POS_PAGEREFS 5209                
+POS_SEARCHWORDS 5357                
+POS_KEYWORDS 5509                
 POS_MISC 2332                
-POS_ERRORS 5639                
-POS_CLUSTER 3343                
-POS_SIDER_404 5814                
+POS_ERRORS 5568                
+POS_CLUSTER 3342                
+POS_SIDER_404 5743                
 END_MAP
 
 # LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
@@ -46,10 +46,10 @@ END_MAP
 # MonthHostsKnown   = Number of hosts known
 # MonthHostsUnKnown = Number of hosts unknown
 BEGIN_GENERAL 8
-LastLine 20140925220041 81 18333 15431600625091
+LastLine 20140925205838 70 16173 10212599083568
 FirstTime 0
-LastTime 20140925220041
-LastUpdate 20140925220101 11 0 11 0 0
+LastTime 20140925205838
+LastUpdate 20140925210101 61 0 61 0 0
 TotalVisits 8                   
 TotalUnique 3                   
 MonthHostsKnown 0                   
@@ -93,15 +93,15 @@ BEGIN_TIME 24
 18 0 0 0 0 0 0
 19 0 0 0 0 0 0
 20 21 37 1234133 19 24 37462
-21 39 51 498799 11 16 20163
-22 94 186 712563 29 35 35642
+21 36 46 488755 9 14 20163
+22 93 182 704279 29 35 35642
 23 115 571 686988 104 153 409147
 END_TIME
 
 # Domain - Pages - Hits - Bandwidth
 # The 10 first Pages must be first (order not required for others)
 BEGIN_DOMAIN 1
-ip 432 1162 3871426
+ip 428 1153 3853098
 END_DOMAIN
 
 # Cluster ID - Pages - Hits - Bandwidth
@@ -115,10 +115,8 @@ END_LOGIN
 
 # Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
 # The 10 first Hits must be first (order not required for others)
-BEGIN_ROBOT 3
+BEGIN_ROBOT 1
 favicon 5 22350 20140925203005 0
-commons\-httpclient 1 0 20140925215807 0
-jakarta 1 0 20140925215807 0
 END_ROBOT
 
 # Worm ID - Hits - Bandwidth - Last visit
@@ -138,13 +136,13 @@ END_EMAILRECEIVER
 
 # Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
 BEGIN_FILETYPES 8
+css 415 148272 0 0
+png 87 153087 0 0
 php 39 1063018 0 0
-css 418 152270 0 0
-png 88 153087 0 0
-html 71 252894 0 0
+html 70 249542 0 0
+jpg 41 38495 0 0
 js 179 335133 0 0
-jpg 42 38495 0 0
-Unknown 322 1873917 0 0
+Unknown 319 1862939 0 0
 gif 3 2612 0 0
 END_FILETYPES
 
@@ -156,12 +154,12 @@ END_DOWNLOADS
 BEGIN_OS ID - Hits - Pages 3
 winxp 4 1
 winvista 12 8
-win7 1146 423
+win7 1137 419
 END_OS
 
 # Browser ID - Hits - Pages
 BEGIN_BROWSER 2
-chrome37.0.2062.124 46 25
+chrome37.0.2062.124 37 21
 chrome37.0.2062.120 1116 407
 END_BROWSER
 
@@ -179,11 +177,11 @@ END_UNKNOWNREFERERBROWSER
 
 # Origin - Pages - Hits 
 BEGIN_ORIGIN 6
-From0 250 250
+From0 246 246
 From1 0 0
 From2 0 0
 From3 0 0
-From4 182 912
+From4 182 907
 From5 0 0
 END_ORIGIN
 
@@ -228,18 +226,18 @@ BEGIN_SIDER_404 42
 /postweq 1 -
 /post 3 http://portfolio.inlanding.ru/
 /qwe.php 1 -
-/services 18 http://portfolio.inlanding.ru/
 /img/works/swetilnikof_prew.png 11 http://portfolio.inlanding.ru/services
-/admin/wqe 2 -
+/services 18 http://portfolio.inlanding.ru/
 /admin/weq 5 -
+/admin/wqe 2 -
 /index.php/about/qwe 1 -
 /admin/qew 1 -
 /index.php/about 2 http://portfolio.inlanding.ru/index.php/services
 /works/work/1 1 -
 /blog 7 -
 /index.php/admin/logout 3 http://portfolio.inlanding.ru/index.php/admin/logout
-/admin/logout 4 -
 /static/img/body_bg.png 1 -
+/admin/logout 4 -
 /index.php/post/img/works/swetilnikof_prew.png 1 http://portfolio.inlanding.ru/index.php/post/index
 /index.php/admin/img/works/swetilnikof_prew.png 3 http://portfolio.inlanding.ru/index.php/admin/logout
 /inde2313131516 1 -
@@ -252,13 +250,13 @@ BEGIN_SIDER_404 42
 /admin/css/style.css 4 http://portfolio.inlanding.ru/admin/logout
 /index.ph23131231 1 -
 /index.php/img/works/swetilnikof_prew.png 7 http://portfolio.inlanding.ru/index.php/services
-/works/1 1 -
 /admin 1 -
+/works/1 1 -
 /qwe 1 -
 /about 8 http://portfolio.inlanding.ru/about
 /site 4 http://portfolio.inlanding.ru/
-/s 1 -
 /admin/img/works/swetilnikof_prew.png 4 http://portfolio.inlanding.ru/admin/logout
+/s 1 -
 /index.php/posts/yiiewqeqe 1 -
 /index.php/services 8 http://portfolio.inlanding.ru/
 /index.php/admin/css/style.css 3 http://portfolio.inlanding.ru/index.php/admin/logout
@@ -268,7 +266,7 @@ END_SIDER_404
 # [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
 # The 10 first Hits must be first (order not required for others)
 BEGIN_VISITOR 3
-37.193.44.46 423 1146 3701613 20140925220041 20140925203217 /works/work/1
+37.193.44.46 419 1137 3683285 20140925205838 20140925203217 /
 5.44.168.93 8 12 152060 20140924172913
 89.189.181.155 1 4 17753 20140925142724
 END_VISITOR
@@ -277,7 +275,7 @@ END_VISITOR
 BEGIN_DAY 3
 20140923 90 506 565169 1
 20140924 315 603 2032588 4
-20140925 27 53 1273669 3
+20140925 23 44 1255341 3
 END_DAY
 
 # Session range - Number of visits
@@ -290,11 +288,11 @@ END_SESSION
 
 # URL - Pages - Bandwidth - Entry - Exit
 # The 10 first Pages must be first (order not required for others)
-BEGIN_SIDER 27
+BEGIN_SIDER 26
 /admin/login 122 467606 1 1
 /admin 79 939025 0 3
 /admin/add 66 314840 0 0
-/ 43 164646 7 2
+/ 42 161294 7 2
 /index.php 34 105988 0 0
 /admin/ 26 81544 0 0
 /post 22 77803 0 1
@@ -304,16 +302,15 @@ BEGIN_SIDER 27
 /admin/delete/7 1 0 0 0
 /main.php 1 3361 0 0
 /index.php/post/1/Welcome%21 1 6062 0 0
-/works 1 3352 0 0
 /index.php/site/page 1 1727 0 0
+/works 1 3352 0 0
 /phpmyadmin/phpmyadmin.css.php 1 89029 0 0
 /index.php/site/captcha 1 2844 0 0
-/phpmyadmin/js/get_scripts.js.php 1 833592 0 0
 /admin/index 3 9387 0 0
+/phpmyadmin/js/get_scripts.js.php 1 833592 0 0
 /phpmyadmin/js/messages.php 1 24785 0 0
-/phpmyadmin/js/get_image.js.php 1 6263 0 0
 /index.php/site/contact 1 3916 0 0
-/works/work/1 3 10978 0 0
+/phpmyadmin/js/get_image.js.php 1 6263 0 0
 /index.php/posts/blog 2 9016 0 0
 /index.php/post/index 2 9882 0 0
 /works/ 2 6704 0 0

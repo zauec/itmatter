@@ -12,6 +12,7 @@ class Works extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return News the static model class
 	 */
+
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -29,4 +30,49 @@ class Works extends CActiveRecord
 		return 'id';
 
 	}
+
+    public function getNextId($id)
+    {
+        $record=self::model()->find(array(
+            'condition' => 'id>:current_id',
+            'order' => 'id ASC',
+            'limit' => 1,
+            'params'=>array(':current_id'=>$id),
+        ));
+        if($record!==null){
+            return $record->id;
+        }
+        else{
+            $record=self::model()->find(array(
+                'order' => 'id ASC',
+                'limit' => 1,
+            ));
+            return $record->id;
+        }
+    }
+    public function getPreviousId($id)
+    {
+        $record=self::model()->find(array(
+            'condition' => 'id<:current_id',
+            'order' => 'id DESC',
+            'limit' => 1,
+            'params'=>array(':current_id'=>$id),
+        ));
+        if($record!==null){
+            return $record->id;
+        }
+        else{
+            $record=self::model()->find(array(
+                'order' => 'id DESC',
+                'limit' => 1,
+            ));
+            return $record->id;
+        }
+    }
+    public function relations()
+    {
+        return array(
+            'images'=>array(self::HAS_MANY, 'Images', 'work_id'),
+        );
+    }
 }
