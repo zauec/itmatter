@@ -79,9 +79,9 @@ class AdminController extends Controller
 		$criteria->condition = 'work_id = :work_id';
 		$criteria->params = [':work_id'=>$id];
 		
-		$categories = Categories::model()->deleteAll($criteria);
+		Workscategory::model()->deleteAll($criteria);
 
-		$images = Images::model()->deleteAll($criteria);
+		Images::model()->deleteAll($criteria);
 			
 		$post = Works::model()->findByPk($id);
 		$post->delete();
@@ -101,7 +101,6 @@ class AdminController extends Controller
             $post->link = Yii::app()->request->getPost('link');
             $post->description = Yii::app()->request->getPost('description');
             $post->tags = Yii::app()->request->getPost('tags');
-            $post->category_id = Yii::app()->request->getPost('category');
 
             if (!empty($_FILES['preview']['tmp_name'])) {
                 $imageinfo = getimagesize($_FILES['preview']['tmp_name']);
@@ -112,6 +111,12 @@ class AdminController extends Controller
             }
 
             if ($post->save()) {
+
+                $worksCategory = new Workscategory;
+                $worksCategory->category_id = Yii::app()->request->getPost('category');
+                $worksCategory->work_id = $post->id;
+                $worksCategory->save();
+
                 foreach ($_FILES["files"]["error"] as $key => $error) {
                     if ($error == UPLOAD_ERR_OK) {
                         $imageinfo = getimagesize($_FILES['files']['tmp_name'][$key]);
@@ -131,6 +136,7 @@ class AdminController extends Controller
                 }
 
                 $this->redirect('/admin');
+
             }
             else {
                 echo "При сохранении произошла ошибка";

@@ -72,7 +72,7 @@ class Works extends CActiveRecord
     public function relations()
     {
         return array(
-            'images'=>array(self::HAS_MANY, 'Images', 'work_id'),
+            'images'=>array(self::HAS_MANY, 'Images', 'work_id')
         );
     }
 }

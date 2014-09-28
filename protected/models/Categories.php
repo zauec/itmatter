@@ -25,8 +25,8 @@ class Categories extends CActiveRecord
 		return 'categories';
 	}
 	public function primaryKey()
-	{
-		return 'id';
+    {
+        return 'id';
 
-	}
+    }
 }
