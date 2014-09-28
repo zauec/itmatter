@@ -1,0 +1,321 @@
+AWSTATS DATA FILE 7.1 (build 1.983)
+# If you remove this file, all statistics for date 201409 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.portfolio.inlanding.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2002                
+POS_TIME 2668                
+POS_VISITOR 8005                
+POS_DAY 8230                
+POS_DOMAIN 3256                
+POS_LOGIN 3487                
+POS_ROBOT 3642                
+POS_WORMS 3877                
+POS_EMAILSENDER 4008                
+POS_EMAILRECEIVER 4151                
+POS_SESSION 8363                
+POS_SIDER 8536                
+POS_FILETYPES 4286                
+POS_DOWNLOADS 4499                
+POS_OS 4547                
+POS_BROWSER 4650                
+POS_SCREENSIZE 4755                
+POS_UNKNOWNREFERER 4829                
+POS_UNKNOWNREFERERBROWSER 4916                
+POS_ORIGIN 4998                
+POS_SEREFERRALS 5136                
+POS_PAGEREFS 5280                
+POS_SEARCHWORDS 5428                
+POS_KEYWORDS 5580                
+POS_MISC 2332                
+POS_ERRORS 5639                
+POS_CLUSTER 3343                
+POS_SIDER_404 5814                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140925220041 81 18333 15431600625091
+FirstTime 0
+LastTime 20140925220041
+LastUpdate 20140925220101 11 0 11 0 0
+TotalVisits 8                   
+TotalUnique 3                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 3                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 1 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 133 252 484988 160 161 307663
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 5 8 17444 7 13 29848
+8 16 41 66698 20 21 59972
+9 0 0 0 0 0 0
+10 0 0 0 0 0 0
+11 0 0 0 0 0 0
+12 0 0 0 0 0 0
+13 0 0 0 0 0 0
+14 1 4 17753 0 1 0
+15 0 0 0 0 0 0
+16 0 0 0 0 0 0
+17 8 12 152060 5 8 9767
+18 0 0 0 0 0 0
+19 0 0 0 0 0 0
+20 21 37 1234133 19 24 37462
+21 39 51 498799 11 16 20163
+22 94 186 712563 29 35 35642
+23 115 571 686988 104 153 409147
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 432 1162 3871426
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+favicon 5 22350 20140925203005 0
+commons\-httpclient 1 0 20140925215807 0
+jakarta 1 0 20140925215807 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+php 39 1063018 0 0
+css 418 152270 0 0
+png 88 153087 0 0
+html 71 252894 0 0
+js 179 335133 0 0
+jpg 42 38495 0 0
+Unknown 322 1873917 0 0
+gif 3 2612 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 3
+winxp 4 1
+winvista 12 8
+win7 1146 423
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 2
+chrome37.0.2062.124 46 25
+chrome37.0.2062.120 1116 407
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 250 250
+From1 0 0
+From2 0 0
+From3 0 0
+From4 182 912
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 8
+403 7 12676
+206 1 5064
+400 1 3332
+401 1 3774
+302 123 269833
+500 126 120650
+301 1 337
+404 151 452746
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 42
+/index.php/posts/yii 1 -
+/post/weq 2 http://portfolio.inlanding.ru/post/weq
+/index.php/css/style.css 6 http://portfolio.inlanding.ru/index.php/services
+/index.php/blog 1 http://portfolio.inlanding.ru/index.php
+/contacts 6 http://portfolio.inlanding.ru/about
+/postweq 1 -
+/post 3 http://portfolio.inlanding.ru/
+/qwe.php 1 -
+/services 18 http://portfolio.inlanding.ru/
+/img/works/swetilnikof_prew.png 11 http://portfolio.inlanding.ru/services
+/admin/wqe 2 -
+/admin/weq 5 -
+/index.php/about/qwe 1 -
+/admin/qew 1 -
+/index.php/about 2 http://portfolio.inlanding.ru/index.php/services
+/works/work/1 1 -
+/blog 7 -
+/index.php/admin/logout 3 http://portfolio.inlanding.ru/index.php/admin/logout
+/admin/logout 4 -
+/static/img/body_bg.png 1 -
+/index.php/post/img/works/swetilnikof_prew.png 1 http://portfolio.inlanding.ru/index.php/post/index
+/index.php/admin/img/works/swetilnikof_prew.png 3 http://portfolio.inlanding.ru/index.php/admin/logout
+/inde2313131516 1 -
+/icons/powered_by_rh.png 1 http://portfolio.inlanding.ru/
+/admin/admin 1 http://portfolio.inlanding.ru/admin/add
+/index.php/post/css/style.css 1 http://portfolio.inlanding.ru/index.php/post/index
+/static/img/works/swetilnikof_prew.png 9 http://portfolio.inlanding.ru/
+/css/style.css 12 http://portfolio.inlanding.ru/services
+/add 1 http://portfolio.inlanding.ru/admin
+/admin/css/style.css 4 http://portfolio.inlanding.ru/admin/logout
+/index.ph23131231 1 -
+/index.php/img/works/swetilnikof_prew.png 7 http://portfolio.inlanding.ru/index.php/services
+/works/1 1 -
+/admin 1 -
+/qwe 1 -
+/about 8 http://portfolio.inlanding.ru/about
+/site 4 http://portfolio.inlanding.ru/
+/s 1 -
+/admin/img/works/swetilnikof_prew.png 4 http://portfolio.inlanding.ru/admin/logout
+/index.php/posts/yiiewqeqe 1 -
+/index.php/services 8 http://portfolio.inlanding.ru/
+/index.php/admin/css/style.css 3 http://portfolio.inlanding.ru/index.php/admin/logout
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 3
+37.193.44.46 423 1146 3701613 20140925220041 20140925203217 /works/work/1
+5.44.168.93 8 12 152060 20140924172913
+89.189.181.155 1 4 17753 20140925142724
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 3
+20140923 90 506 565169 1
+20140924 315 603 2032588 4
+20140925 27 53 1273669 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+1h+ 2
+5mn-15mn 1
+0s-30s 2
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 27
+/admin/login 122 467606 1 1
+/admin 79 939025 0 3
+/admin/add 66 314840 0 0
+/ 43 164646 7 2
+/index.php 34 105988 0 0
+/admin/ 26 81544 0 0
+/post 22 77803 0 1
+/admin/delete/10 9 7 0 0
+/index.php/posts/yii 3 13518 0 0
+/index.php/site/login 3 3952 0 0
+/admin/delete/7 1 0 0 0
+/main.php 1 3361 0 0
+/index.php/post/1/Welcome%21 1 6062 0 0
+/works 1 3352 0 0
+/index.php/site/page 1 1727 0 0
+/phpmyadmin/phpmyadmin.css.php 1 89029 0 0
+/index.php/site/captcha 1 2844 0 0
+/phpmyadmin/js/get_scripts.js.php 1 833592 0 0
+/admin/index 3 9387 0 0
+/phpmyadmin/js/messages.php 1 24785 0 0
+/phpmyadmin/js/get_image.js.php 1 6263 0 0
+/index.php/site/contact 1 3916 0 0
+/works/work/1 3 10978 0 0
+/index.php/posts/blog 2 9016 0 0
+/index.php/post/index 2 9882 0 0
+/works/ 2 6704 0 0
+/admin/logout 2 2 0 0
+END_SIDER

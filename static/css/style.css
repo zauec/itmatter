@@ -1,0 +1,241 @@
+*{margin: 0; padding: 0;}
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #2b2b2b;
+    background: url('../img/body_bg.jpg');
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+.content{
+	min-height: 100%;
+}
+img{
+    border: 0;
+}
+ul, ol{
+	list-style: none;
+}
+a{
+	color: inherit;
+    text-decoration: none;
+}
+.clearfix{
+	clear: both;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.header li.active a, .header li:hover a, .contacts a, a:hover{
+    color: #41bad4;
+}
+a.dashed{
+    border-bottom: 1px dashed;
+    font-size: 12px;
+}
+.header li{
+    float: left;
+    margin-right: 20px;
+}
+h2{
+    text-transform: uppercase;
+	color: #6c6969;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    margin-right: 8px;
+	
+}
+.header .pull-right{
+    text-align: right;
+}
+.header .phone{
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header ul{
+    margin-top: 15px;
+}
+.header{
+    background: #2b2b2b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    height: 80px;
+    color: #fff;
+    padding-top: 15px;
+}
+.content{
+    padding-top: 30px;
+}
+.order-button:hover{
+	color: #fff;
+}
+.order-button:active{
+	border-top: 2px solid #abcc25;
+	border-bottom: 0;
+}
+.order-button{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 15px;
+    background: #abcc25 url('../img/array.png') 89% center no-repeat;
+    border-bottom: 2px solid #839c1c;
+    line-height: 48px;
+    height: 48px;
+    width: 222px;
+    color: #fff;
+    padding-left: 30px;
+    border-radius: 3px;
+}
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+.works a:hover{
+    text-decoration: none;
+}
+.works .work img{
+    width: 100%;
+}
+.works .line .work:first-child{
+    margin-left: 0;
+}
+.works .work a.image:after{
+    box-shadow: -6px 15px 10px rgba(0, 0, 0, 0.7);
+    right: 0px;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+.works .work a.image:before,.works .work a.image:before{
+    width: 50%;
+    z-index: -1;
+    content: "";
+    height: 8px;
+    bottom: 15px;
+    position: absolute;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.works .work a.image:before{
+    box-shadow: 6px 15px 10px rgba(0, 0, 0, 0.7);
+    left: 0px;
+    -moz-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+
+}
+.works .line{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.works .work a.image{
+    display: block;
+    width: 215px;
+    height: 170px;
+    position: relative;
+    background: #FFF;
+}
+.works .work p{
+    margin: 15px 0 5px;
+}
+.works .work{
+    width: 215px;
+    float: left;
+    margin-left: 33px;
+    line-height: 24px;
+}
+.works a{
+    color: #ef8921;
+    text-decoration: underline;
+}
+.categories span{
+	color: #888888;
+}
+.categories a{
+    line-height: 29px;
+    padding: 0 8px;
+    display: block;
+	border-radius: 14px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.categories li.active a span{
+	color: #fff;
+}
+.categories li.active a{
+    color: #fff;
+    background: #86bc12;
+}
+.categories li{
+    float: left;
+}
+.categories{
+    background: #fff;
+    height: 65px;
+    padding-top: 20px;
+    margin: 10px 0 20px;
+}
+.footer .contacts{
+    font-size: 14px;
+    color: #787878;
+    text-align: right;
+}
+.footer .dashed{
+    color: #aaaaaa;
+}
+.footer{
+    line-height: 24px;
+    background: #2b2b2b;
+    height: 143px;
+    padding-top: 25px;
+    color: #fff;
+}
+.brief a{
+    margin-right: 20px;
+}
+
+/* full page css */
+.full .description{
+    line-height: 24px;
+}
+.full .description .tags{
+    color: #9a9a9a;
+    font-size: 13px;
+    font-style: italic;
+    padding-top: 25px;
+}
+.full .description a:hover{
+    text-decoration: none;
+}
+.full .description a{
+    color: #41bad4;
+    text-decoration: underline;
+    margin: 10px 0 15px;
+    display: block;
+}
+.full .description h3{
+    font-size: 22px;
+    font-weight: normal;
+}
+.full .description p{
+    padding-right: 30px;
+}
+.full .description{
+    float: right;
+    width: 382px;
+}

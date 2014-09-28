@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/portfolio.inlanding.ru/webstat"
+AuthUserFile /var/www/ftpuser/data/etc/266570.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
