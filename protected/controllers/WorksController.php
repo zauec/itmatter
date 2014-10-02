@@ -13,9 +13,12 @@ class WorksController extends Controller
 
         if ($id) {
             $work = Works::model()->with('images')->findByPk($id);
+            //$work = Works::model()->with('images')->with('workscategory')->findByPk($id);
+			//$work->workscategory[0]['id'];
+			$category = @$_GET['category'];
 
-            $buttons['next'] = Works::model()->getNextId($id);
-            $buttons['previous'] = Works::model()->getPreviousId($id);
+            $buttons['next'] = Works::model()->getNextId($id, $category);
+            $buttons['previous'] = Works::model()->getPreviousId($id, $category);
 
             $this->render('work',['work'=>$work,'buttons'=>$buttons,'list'=>$list]);
 
@@ -28,10 +31,11 @@ class WorksController extends Controller
                         ON works_category.category_id = categories.id
                      INNER JOIN works
                         ON works_category.work_id = works.id
-                    WHERE categories.alt_name = '$category'")->queryAll();
+                    WHERE categories.alt_name = '$category'
+					ORDER BY works.id ASC")->queryAll();
             }
             else{
-                $works = Works::model()->findAll();
+                $works = Works::model()->findAll(['order'=>'id ASC']);
             }
            $this->render('index', ['works' => $works,'list'=>$list]);
         }
@@ -47,4 +51,5 @@ class WorksController extends Controller
 	        	$this->render('error', $error);
 	    }
 	}
+	
 }

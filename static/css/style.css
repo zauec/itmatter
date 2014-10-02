@@ -108,6 +108,9 @@ h2{
 .works a:hover{
     text-decoration: none;
 }
+.works .work img:hover{
+	opacity: 0.9;
+}
 .works .work img{
     width: 100%;
 }

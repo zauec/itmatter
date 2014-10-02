@@ -28,4 +28,11 @@ class Workscategory extends CActiveRecord
     {
         return 'id';
     }
+	
+	public function relations()
+    {
+        return array(
+            'workcategory'=>array(self::BELONGS_TO, 'Works', 'id'),
+        );
+    }
 }
